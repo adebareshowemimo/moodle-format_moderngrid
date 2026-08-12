@@ -1,3 +1,12 @@
+# Grid - Modern Course Format v1.5.4
+
+## Release notes
+
+- Added the missing built AMD artifacts for course-index completion indicators and activity navigation.
+- Regenerated all AMD artifacts from their current sources, including Moodle GPL boilerplate updates.
+- Corrected release packaging so the ZIP contains the required top-level `moderngrid` directory.
+- Bumped the Moodle plugin build to `2026081200`.
+
 # Grid - Modern Course Format v1.0.0
 
 ## Release notes

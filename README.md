@@ -2,6 +2,8 @@
 
 Grid - Modern Course Format is a visual Moodle course format for courses that are easier to browse as a set of section cards instead of a long topic list. It keeps Moodle's standard section editing and single-section activity pages, while replacing the course landing page with a responsive grid of cards that can show images, summaries, activity counts, and learner progress.
 
+Current release: **1.5.4**
+
 The format is useful for course home pages, self-paced learning paths, media-heavy courses, and courses where learners need a clear overview of each section before opening it.
 
 ## Main Features

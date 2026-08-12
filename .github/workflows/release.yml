@@ -23,7 +23,7 @@ jobs:
 
       - name: Stage plugin folder
         run: |
-          mkdir -p dist/grid
+          mkdir -p dist/moderngrid
           rsync -a \
             --exclude='.git' \
             --exclude='.github' \
@@ -32,15 +32,15 @@ jobs:
             --exclude='vendor' \
             --exclude='.phpunit.result.cache' \
             --exclude='*.zip' \
-            ./ dist/grid/
+            ./ dist/moderngrid/
 
       - name: Build ZIP
         id: zip
         run: |
           VERSION="${GITHUB_REF_NAME}"
-          FILENAME="grid-${VERSION}.zip"
+          FILENAME="moderngrid-${VERSION}.zip"
           cd dist
-          zip -r "../${FILENAME}" grid
+          zip -r "../${FILENAME}" moderngrid
           cd ..
           sha256sum "${FILENAME}" > "${FILENAME}.sha256"
           echo "filename=${FILENAME}" >> "$GITHUB_OUTPUT"
@@ -54,4 +54,3 @@ jobs:
           generate_release_notes: true
           draft: false
           prerelease: ${{ contains(github.ref_name, '-') }}
-

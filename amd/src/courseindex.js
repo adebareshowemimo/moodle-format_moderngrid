@@ -16,9 +16,8 @@
  *
  * Course index drawer collapse module for Grid format.
  *
- * Collapses the course index drawer on page load without
- * persisting the state to user preferences, so users can
- * still toggle it open during their session.
+ * Collapses the course index drawer when the course requests a collapsed default
+ * and the user has not yet saved a drawer preference.
  *
  * @module     format_moderngrid/courseindex
  * @copyright  2026 Adebare Showemimo

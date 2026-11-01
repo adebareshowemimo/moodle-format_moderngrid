@@ -123,9 +123,9 @@ class content extends content_base {
         // Inject section-complete checkmarks into the course index drawer.
         $PAGE->requires->js_call_amd('format_moderngrid/courseindex_completion', 'init');
 
-        // Collapse course index drawer by default if configured.
+        // Apply the collapsed default only until the user has chosen a drawer state.
         $courseindexdefault = $format->get_format_options()['courseindexdefault'] ?? 1;
-        if (!$courseindexdefault) {
+        if (!$courseindexdefault && get_user_preferences('drawer-open-index') === null) {
             $PAGE->requires->js_call_amd('format_moderngrid/courseindex', 'init');
         }
 

@@ -1,3 +1,11 @@
+# Grid - Modern Course Format v1.5.5
+
+## Release notes
+
+- Respect each user's saved course index drawer state when the course default is collapsed.
+- Apply the collapsed default only before a user has chosen an open or closed state.
+- Bumped the Moodle plugin build to `2026110100`.
+
 # Grid - Modern Course Format v1.5.4
 
 ## Release notes

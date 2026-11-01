@@ -41,12 +41,12 @@
 }}
 <style>
 [data-region="format-grid"] {
-    --format-grid-badge-bg: {{completebadgebg}};
+    --format-grid-badge-bg: var(--bs-primary, {{completebadgebg}});
     --format-grid-badge-text: {{completebadgetext}};
-    --format-grid-progress-color: {{progressbarcolor}};
+    --format-grid-progress-color: var(--bs-primary, {{progressbarcolor}});
     --format-grid-not-started-color: {{notstartedcolor}};
     --format-grid-in-progress-color: {{inprogresscolor}};
-    --format-grid-complete-color: {{completecolor}};
+    --format-grid-complete-color: var(--bs-primary, {{completecolor}});
 }
 </style>
 <div class="format-grid-content" data-region="format-grid">

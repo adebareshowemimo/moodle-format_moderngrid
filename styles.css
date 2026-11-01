@@ -692,7 +692,7 @@
 }
 
 .format-grid-section-complete .icon {
-    color: #28a745;
+    color: var(--bs-primary, #28a745);
     width: 14px;
     height: 14px;
     margin: 0;

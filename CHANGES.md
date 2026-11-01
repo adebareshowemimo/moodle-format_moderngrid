@@ -1,3 +1,11 @@
+# Grid - Modern Course Format v1.5.6
+
+## Release notes
+
+- Use the active theme's primary brand colour for completed badges, progress bars, completion indicators, and course-index checkmarks.
+- Keep the plugin's completion colour settings as fallbacks when a theme does not provide a primary brand colour.
+- Bumped the Moodle plugin build to `2026110101`.
+
 # Grid - Modern Course Format v1.5.5
 
 ## Release notes

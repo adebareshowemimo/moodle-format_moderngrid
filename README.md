@@ -2,7 +2,7 @@
 
 Grid - Modern Course Format is a visual Moodle course format for courses that are easier to browse as a set of section cards instead of a long topic list. It keeps Moodle's standard section editing and single-section activity pages, while replacing the course landing page with a responsive grid of cards that can show images, summaries, activity counts, and learner progress.
 
-Current release: **1.5.5**
+Current release: **1.5.6**
 
 The format is useful for course home pages, self-paced learning paths, media-heavy courses, and courses where learners need a clear overview of each section before opening it.
 
@@ -18,7 +18,7 @@ The format is useful for course home pages, self-paced learning paths, media-hea
 - Optional section title, summary excerpt, activity count, progress bar, and completion summary row.
 - Section completion indicators using Moodle activity completion data.
 - Completed badge when all tracked activities in a section are complete.
-- Site-level colour settings for completed badges, progress bars, and completion states.
+- Completion badges, progress bars, and completed states follow the active theme's primary brand colour, with site-level colour settings as fallbacks.
 - Configurable General section display: panel above the grid, grid card, or hidden.
 - Course index support with optional default collapsed state.
 - Course-index completion checkmarks for completed sections.
@@ -75,6 +75,8 @@ Administrators can configure the colours used for:
 - not started state;
 - in progress state;
 - completed state.
+
+When the active theme provides a primary brand colour, the completed badge background, progress bar, completed icon, completed count, and course-index checkmark use it. The plugin's corresponding colour settings are fallbacks for themes without a primary brand colour. The not-started and in-progress colours remain independently configurable.
 
 ## Activity Navigation
 
